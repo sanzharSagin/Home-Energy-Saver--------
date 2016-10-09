@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Home Energy Saver</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/general.js"></script>
+</head>
+<div id="topHeader">
+<!-- шапка -->
+</div>
+<body>
+	<div class="container">
+
+		<ul class="tabs">
+			<li class="tab-link current" data-tab="generalInfo">Общие данные</li>
+			<li class="tab-link" data-tab="tab-2">Теплообмен</li>
+			<li class="tab-link" data-tab="tab-3">Паропроницаемость</li>
+			<li class="tab-link" data-tab="tab-4">Теплоустойчивость</li>
+			<li class="tab-link" data-tab="tab-5">Воздухопроницаемость</li>
+			<li class="tab-link" data-tab="tab-6">Теплобаланс</li>
+			<li class="tab-link" data-tab="tab-7">Экономическая эффективность</li>
+			<li class="tab-link" data-tab="tab-8">Экология</li>
+		</ul>
+
+		<div id="generalInfo" class="tab-content current">
+		
+		 <form id="generalInfoForm" name="generalInfoForm" method="post" action="">
+			
+			<select id="citySelect">
+				<option value='null'>- Город -</option>
+				<option value='Москва'>Москва</option>
+				<option value='Астана'>Астана</option>
+			</select>
+		  
+			<textarea id="aboutCity" name="aboutCity" cols="40" rows="3"></textarea>
+			
+			<p> Блок 1.1 Таблица для заполнения </p>
+			
+			<table>
+				<tr>
+					<th> Head 1</th>
+					<th> Head 2</th>
+					<th> Head 3</th>
+				</tr>
+				<tr>
+					<td> Cell 1</td>
+					<td> Cell 2</td>
+					<td> Cell 3 <input class="tableCheckBox" type="checkbox" name="option1" value=""></td>
+				</tr>
+				<tr>
+					<td> Cell 4</td>
+					<td> Cell 5</td>
+					<td> Cell 6 <input class="tableCheckBox" type="checkbox" name="option1" value=""></td>
+				</tr>
+				<tr>
+					<td> Cell 7</td>
+					<td> Cell 8</td>
+					<td> Cell 9 <input class="tableCheckBox" type="checkbox" name="option1" value=""></td>
+				</tr>
+				
+			</table>
+
+			<textarea id="keyValues" name="keyValues" cols="20" rows="2"></textarea>
+			<textarea id="graphs" name="graphs" cols="20" rows="2"></textarea>
+		  <button class="addBlock"> Добавить еще один блок</button>
+		 </form>
+	
+		</div>
+		<div id="tab-2" class="tab-content">
+			 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+		<div id="tab-3" class="tab-content">
+			Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+		</div>
+		<div id="tab-4" class="tab-content">
+			Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+		</div>
+
+	</div><!-- container -->
+
+
+
+
+</body>
+
+</html>
