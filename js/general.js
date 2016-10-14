@@ -14,5 +14,6 @@ $(document).ready(function(){
 	/* Город по default*/
 	$("#citySelect").val('null');
 	
-	
+
+
 })

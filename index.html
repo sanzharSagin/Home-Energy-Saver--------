@@ -36,7 +36,37 @@
 		  
 			<textarea id="aboutCity" name="aboutCity" cols="40" rows="3"></textarea>
 			
-			<p> Блок 1.1 Таблица для заполнения </p>
+			<div class="blockName">
+				<table>
+					<tr>
+						<td> Блок 1.1</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td> Вид наружнего ограждения </td>
+						<td> 
+							<select> 
+								<option>
+									Стены
+								</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td> Конструктивное решение наружного ограждения </td>
+						<td>
+							<div>
+							<select class="selectBox" style="width:200px;"> 
+								<option style="width:100px;">
+									Железобетонные и кирпичные конструкции с плитным
+								</option>
+							</select>			
+							</div>
+						</td>
+					</tr>
+				</table>
+				
+			</div>
 			
 			<table>
 				<tr>
@@ -60,22 +90,142 @@
 					<td> Cell 9 <input class="tableCheckBox" type="checkbox" name="option1" value=""></td>
 				</tr>
 				
-			</table>
-
+			</table> 
+			
 			<textarea id="keyValues" name="keyValues" cols="20" rows="2"></textarea>
 			<textarea id="graphs" name="graphs" cols="20" rows="2"></textarea>
-		  <button class="addBlock"> Добавить еще один блок</button>
+		    <button class="addBlock"> Добавить еще один блок</button> 
 		 </form>
 	
 		</div>
 		<div id="tab-2" class="tab-content">
-			 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			<table class="dataTable">
+				<th colspan="4"> Теплообмен </th>
+				<tr>
+					<td class="dataName"> Коэффициент теплоотд. внутр. пов.  aв= </td>
+					<td> </td>	
+					<td class="dataName"> Для определения толщины изоляции Rcon = </td>
+					<td> </td>					
+				</tr>
+				<tr>
+					<td class="dataName"> Коэффициент теплоотд. наруж.пов.  aн= </td>
+					<td> </td>	
+					<td class="dataName"> Rусл= </td>
+					<td> </td>					
+				</tr>
+				<tr>
+					<td class="dataName"> Коэффициент теплотехн. однород.  rод.= </td>
+					<td> </td>	
+					<td class="dataName"> Rпр= </td>
+					<td> </td>					
+				</tr>
+				<tr>
+					<td class="dataName"> Коэффициент полож.наруж поверхн.  n= </td>
+					<td> </td>	
+					<td class="dataName"> Ro.мин1= </td>
+					<td> </td>					
+				</tr>
+				<tr>
+					<td class="dataName"> Нормируемый  температур.перепад, oC Dtн= </td>
+					<td> </td>	
+					<td class="dataName"> Ro.мин2= </td>
+					<td> </td>					
+				</tr>
+				<tr>
+					<td class="dataName"> Темп. воздуха эксплутац. помещения tc= </td>
+					<td> <input type="text"> </td>	
+					<td class="dataName"> Необходимая толщина изоляции = </td>
+					<td> </td>					
+				</tr>
+				<tr>
+					<td class="dataName"> Тепловая инерция  D= </td>
+					<td> </td>	
+					<td class="dataName"> Фактическая толщина изоляции= </td>
+					<td> </td>					
+				</tr>
+				<tr>
+					<td class="dataName"> 'tповерх.= </td>
+					<td> </td>	
+					<td class="dataName"> Толщина Изоляции по формуле= </td>
+					<td> </td>					
+				</tr>				
+				
+			</table>
 		</div>
 		<div id="tab-3" class="tab-content">
-			Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+			<table class="dataTable">
+				<th colspan="4"> Паропроницаемость </th>
+				<tr>
+					<td class="dataName"> Rпо = </td>
+					<td> </td>					
+				</tr>
+				<tr>
+					<td class="dataName"> Rп = </td>
+					<td> </td>	
+				</tr>
+				<tr>
+					<td class="dataName">  Rп.н. Tmp = </td>
+					<td> </td>					
+				</tr>
+				<tr>
+					<td class="dataName"> Rп.н. = </td>
+					<td> </td>				
+				</tr>
+				<tr>
+					<td class="dataName"> P = </td>
+					<td> </td>			
+				</tr>
+				<tr>
+					<td class="dataName">  Rп1тр= </td>
+					<td> </td>					
+				</tr>				
+				
+			</table>
 		</div>
 		<div id="tab-4" class="tab-content">
-			Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+			<table class="dataTable">
+				<th colspan="4"> Теплоустойчивость </th>
+				<tr>
+					<td class="dataName"> AtBтр= </td>
+					<td> </td>	
+					<td class="dataName"> r= </td>
+					<td> </td>					
+				</tr>
+				<tr>
+					<td class="dataName"> Аtнрас= </td>
+					<td> </td>	
+					<td class="dataName"> Iср= </td>
+					<td> </td>					
+				</tr>
+				<tr>
+					<td class="dataName"> AtB= </td>
+					<td> </td>	
+					<td class="dataName"> aн= </td>
+					<td> </td>					
+				</tr>
+				<tr>
+					<td class="dataName"> n= </td>
+					<td> </td>	
+					<td class="dataName"> Аtн= </td>
+					<td> </td>					
+				</tr>
+				<tr>
+					<td class="dataName"> скорост ветра за Июль  v= </td>
+					<td> </td>	
+					<td class="dataName"> Imax= </td>
+					<td> </td>					
+				</tr>
+				<tr>
+					<th colspan="4"> пол </th>					
+				</tr>
+				<tr>
+					<td class="dataName"> Yпн= </td>
+					<td> </td>	
+					<td class="dataName"> Y1= </td>
+					<td> </td>					
+				</tr>			
+				
+			</table>
 		</div>
 
 	</div><!-- container -->
